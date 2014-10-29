@@ -128,6 +128,10 @@ class Wechat
 		$this->debug = isset($options['debug'])?$options['debug']:false;
 		$this->_logcallback = isset($options['logcallback'])?$options['logcallback']:false;
 	}
+
+    public function get_app_id(){
+        return $this->appid;
+    }
 	
 	/**
 	 * For weixin server validation 
